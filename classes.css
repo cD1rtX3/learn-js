@@ -15,7 +15,14 @@ body {
 }
 
 code {
-	font-size: calc(1em - 3px);
+	display: block;
+	font-size: calc(1rem - 3px);
+	line-height: 1rlh;
+	padding: 0px 4ch;
+}
+il-code {
+	display: inline;
+	font: calc(1em - 3px) monospace;
 }
 
 /* Custom styles for code blocks. */
