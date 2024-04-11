@@ -37,19 +37,171 @@
 		</p>
 		<h2>Basic Syntax:</h2>
 		<p>
-			Of course, we can't start all at once. The first thing you need to
-			know is how the basic layout of the language works.
+			Syntax is the bread and butter of a programming or scripting
+			language. Many facets of JavaScript's syntax are situational and
+			will be covered in their corresponding sections, but a few aren't
+			and should be covered up here.
 		</p>
 		<p>
-			Every statement ends with a semicolon:
+			JavaScript is a &ldquo;whitespace-agnostic&rdquo; language, meaning
+			it doesn't really care what whitespace is used, and often doesn't
+			care that whitespace is used at all. This means that characters like
+			tabulations and carriage returns are mostly just for humans reading
+			the code.
+		</p>
+		<p>
+			Statements in JavaScript (and in most computer languages) end in a
+			semicolon:
 		</p>
 		<code>
-			<kw>let</kw> x = <num>0</num>;
-		</code><br>
+			<kw>let</kw> foo = <num>1</num>;
+		</code>
 		<p>
-			This explicitly tells JavaScript that you are done with the
-			instruction and are ready to move on to the next line of code.
+			This tells JavaScript that you are finished with your statement,
+			similar to the period in English.
 		</p>
+		<p>
+			Single-line comments are declared with two slashes, like this:
+		</p>
+		<code>
+			<com>// This is a comment.</com>
+		</code>
+		<p>
+			Multi-line comments are between a pair of <il-code>/*</il-code> and
+			<il-code>*/</il-code>, like this:
+		</p>
+		<code>
+			<com>
+			/*<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;This is a multi-line comment. It can (as its name<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;suggests) span multiple lines. It is useful for<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;writing large blocks of text to help a reader<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;understand your code.<br>
+			*/
+			</com>
+		</code>
+		<h2>Variables:</h2>
+		<p>
+			Variables are how you store data within a script and are declared
+			like this:
+		</p>
+		<code>
+			<kw>let</kw> foo = <num>0</num>;
+		</code>
+		<p>
+			The <il-code>let</il-code> keyword, as you may have guessed,
+			declares a variable. Variable names are case-sensitive
+			(capitalization matters) and can be any string of letters, numbers,
+			and/or underscores (_), though they cannot start with a number.
+		</p>
+		<p>
+			Perhaps an unintuitive facet of the language is the assignment
+			(<il-code>=</il-code>) operator, which is a single equals sign. This is
+			not to be confused (though it often is) with the equivalance operator
+			(<il-code>==</il-code>, two equals signs). The assignment operator assigns
+			a value to a variable and can be used in a <il-code>let</il-code> statement
+			as above or on its own if the variable has already been declared:
+		</p>
+		<code>
+			foo = <num>2</num>;
+		</code>
+		<p>
+			They can also be chained:
+		</p>
+		<code>
+			foo = bar = <num>3</num>;
+		</code>
+		<p>
+			Multiple variables can be declared in a single statement, like this:
+		</p>
+		<code>
+			<kw>let</kw> a = <num>0</num>, b = <num>1</num>, c = <num>2</num>;
+		</code>
+		<p>
+			and a variable does not have to be given a value:
+		</p>
+		<code>
+			<kw>let</kw> foo;
+		</code>
+		<h2>Data Types:</h2>
+		<p>
+			It's no fun to have variables if theres nothing to put in them.
+			JavaScript has a few different types of things that can be put in
+			a variable, one of which you have already seen &mdash; <il-code>number</il-code>s;
+		</p>
+		<h3>Numbers:</h3>
+		<code>
+			<com>// This is a number:</com><br>
+			<num>3</num>
+		</code>
+		<p>
+			That was a number. Numbers are exactly what they sound like. They
+			can look like this:
+		</p>
+		<code>
+			<num>3</num>
+		</code>
+		<p>
+			like this:
+		</p>
+		<code>
+			<num>3.2</num>
+		</code>
+		<p>
+			or even like this:
+		</p>
+		<code>
+			<num>1_083.2</num>
+		</code>
+		<h3>Strings:</h3>
+		<p>
+			A string is an amount of characters next to each other, like this:
+		</p>
+		<code>
+			<str>"Hello!"</str>
+		</code>
+		<p>
+			Note the quotes around it &mdash; those distinguish it from a variable
+			name. They don't have to be double-quotes, either. They can be
+			single-quotes:
+		</p>
+		<code>
+			<str>'Hello!'</str>
+		</code>
+		<p>
+			or graves (though grave-quotes have some special properties that
+			we'll get to later):
+		</p>
+		<code>
+			<str>`Hello!`</str>
+		</code>
+		<h3>Boolean:</h3>
+		<p>
+			A boolean is a true or a false value, and looks like this:
+		</p>
+		<code>
+			<kw>true</kw>
+		</code>
+		<p>
+			or this:
+		</p>
+		<code>
+			<kw>false</kw>
+		</code>
+		<h3>Null and Undefined:</h3>
+		<p>
+			<il-code>null</il-code> is a purposefully-set &ldquo;nothing&rdquo; value:
+		</p>
+		<code>
+			<kw>null</kw>
+		</code>
+		<p>
+			while <il-code>undefined</il-code> is the value of an uninitialized variable
+			(that is, one that hasn't had a value given to it):
+		</p>
+		<code>
+			<kw>undefined</kw>
+		</code>
 			<!--   20   25   30   35   40   45   50   55   60   65   70   75 -->
 	</body>
 </html>
