@@ -2,15 +2,16 @@
 	box-sizing: border-box;
 	min-width: 0px;
 }
+:root {
+	font-size: max(14pt, 1em);
+}
 
 body {
 	background-color: #111;
 	color: #ddd;
 	font-family: sans-serif;
-	font-size: max(14pt, 1em);
-	margin-left: 25vw;
-	margin-right: 25vw;
-	margin-top: 1em;
+	margin: 1em auto 2em;
+	width: min(calc(100vw - 16px), 960px);
 }
 
 /* Custom styles for code blocks. */
