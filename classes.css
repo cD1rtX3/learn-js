@@ -14,6 +14,10 @@ body {
 	width: min(calc(100vw - 2em), 960px);
 }
 
+code {
+	font-size: calc(1em - 3px);
+}
+
 /* Custom styles for code blocks. */
 brac1 {
 	color: #fd0;
