@@ -10,18 +10,18 @@ body {
 	background-color: #111;
 	color: #ddd;
 	font-family: sans-serif;
-	margin: 1em auto 2em;
-	width: min(calc(100vw - 2em), 960px);
+	margin: 1em auto;
+	width: calc(min(100vw, 1080px) - 2em);
 }
 
 code {
 	display: block;
 	font-size: calc(1rem - 3px);
 	line-height: 1rlh;
-	padding: 0px 4ch;
+	padding-left: 4ch;
+	white-space: nowrap;
 }
 il-code {
-	display: inline;
 	font: calc(1em - 3px) monospace;
 }
 
