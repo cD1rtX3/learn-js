@@ -18,7 +18,8 @@ code {
 	display: block;
 	font-size: calc(1rem - 3px);
 	line-height: 1rlh;
-	padding-left: 4ch;
+	overflow-x: scroll;
+	padding: 4ch;
 	white-space: nowrap;
 }
 il-code {
