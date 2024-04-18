@@ -10,8 +10,8 @@ body {
 	background-color: #111;
 	color: #ddd;
 	font-family: sans-serif;
-	margin: 1em auto;
-	width: calc(min(100vw, 720px) - 2em);
+	margin: 1.729em auto;
+	width: calc(min(100vw, 830px) - 4em);
 }
 
 code {
