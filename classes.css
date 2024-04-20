@@ -18,8 +18,10 @@ code {
 	display: block;
 	font-size: calc(1rem - 3px);
 	line-height: 1rlh;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 	overflow-x: scroll;
-	padding: 4ch;
+	padding-left: 4ch;
 	white-space: nowrap;
 }
 il-code {
