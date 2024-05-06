@@ -77,6 +77,30 @@
 		<code>
 			Hello, world!
 		</code>
+		<details>
+		<summary>But What's That Underneath?:</summary>
+		<p>
+			If you ran the code in the DevTools console (the one that pops up with
+			Ctrl+Shift+I), you probably noticed that underneath our glorious message is:
+		</p>
+		<code>
+			undefined
+		</code>
+		<p>
+			What's that? As stated above, <il-code>console.log</il-code> is a function, and in JavaScript,
+			functions have what is called a return value, which is simply the value
+			handed back by the function. In the case of <il-code>console.log</il-code>, the return value is
+			simply <il-code>undefined</il-code>, which isn't very useful, but other functions exist that have
+			cooler return values, like the function <il-code>Math.sqrt</il-code>:
+		</p>
+		<code>
+			<clss>Math</clss>.sqrt<brac1>(<num>9</num>)</brac1> <com>// Returns 3</com>
+		</code>
+		<p>
+			We'll get into functions more later, but for now, that's why the console says
+			<il-code>undefined</il-code>.
+		</p>
+		</details>
 		<h2>Variables:</h2>
 		<p>
 			After saying hi to the world, the first step on our journey brings us to
