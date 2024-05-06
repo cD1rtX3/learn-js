@@ -21,6 +21,7 @@ code {
 	margin-bottom: 1rem;
 	margin-top: 1rem;
 	overflow-x: scroll;
+	scrollbar-color: #666;
 	padding-left: 4ch;
 	white-space: nowrap;
 }
