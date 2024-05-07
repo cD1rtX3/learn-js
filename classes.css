@@ -16,6 +16,7 @@ body {
 
 details {
 	border: 1px solid #666;
+	border-radius: 0.5em;
 	padding: 0.5em;
 }
 details > *:last-child {
@@ -27,13 +28,15 @@ summary {
 }
 
 code {
+	background-color: #191919;
+	border-radius: 1rem;
 	display: block;
 	font-size: calc(1rem - 3px);
 	line-height: 1rlh;
 	margin-bottom: 1rem;
 	margin-top: 1rem;
-	overflow-x: scroll;
-	padding-left: 4ch;
+	overflow-x: auto;
+	padding: 1rem 4ch;
 	white-space: nowrap;
 }
 il-code {
