@@ -16,7 +16,7 @@ body {
 
 details {
 	border: 1px solid #666;
-	border-radius: 0.5em;
+	border-radius: 0.58em;
 	padding: 0.58em;
 }
 details > *:last-child {
